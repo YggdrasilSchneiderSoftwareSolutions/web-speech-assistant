@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>web-speech-assistant</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h3>Your personal web-speech-assistant</h3>
+        </div>
+        <button id="talk">Speak</button>
+        <h3 id="content"></h3>
+        <div class="config">
+            <div>
+                <label for="language">Language</label>
+                <select id="language"></select>
+            </div>
+            <div>
+                <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+                <div class="rate-value">1</div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <label for="pitch">Pitch</label><input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+                <div class="pitch-value">1</div>
+                <div class="clearfix"></div>
+            </div>
+            <select id="voice"></select>
+            <div>
+                <button id="voicetest">Voice Test</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
